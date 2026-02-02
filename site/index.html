@@ -47,38 +47,71 @@
 			</div>
 		</div>
 	</div>
-	<div class="hy flex vertical center center-text">
-		<h1 class="hy center-text no-color" style="box-shadow: none; margin-top: 2em; margin-bottom: -0.6em; width: 80vw;">
-			Meet <a class="hy link" style="color: royalblue; font-size: inherit;" href="https://breve.animart.dev">Breve</a>: The Flagship Language of Anima
-		</h1>
-		<div class="hy card flex horizontal center">
-			<code class="hy left-text" style="background-color: #222; color: white; padding: 0.3em 0.6em; margin-inline: 0.3em; border-radius: inherit; box-shadow: 0px 3px 6px color-mix(in oklab, black, transparent);">
-				<span style="color:lightblue;">import</span> core<span style="color: lightcoral">;</span>
-
-				<span style="color: lightblue;">main</span> </span> <span style="color: lightcoral">{</span>
-					&nbsp;&nbsp;&nbsp;&nbsp;core.IO.writeLine<span style="color: lightcoral">(</span><span style="color: gold">"Hello, World!"</span><span style="color: lightcoral">);</span>
-				<span style="color: lightcoral">}</span>
-
-			</code>
-			<div class="hy">
-				<p class="hy center-text" style="font-weight: bold;">
-					Simplicity meets modernity.
-				</p>
-				<p class="hy center-text">
-					Write less, and make more.
-				</p>
+	<div class="hy flex vertical center center-text" style="width: 90vw;">
+		<div class="hy flex vertical center center-text">
+			<h1 class="hy center-text no-color" style="box-shadow: none; margin-top: 2em; margin-bottom: -0.6em; width: 80vw;">
+				Meet <a class="hy link" style="color: royalblue; font-size: inherit;" href="https://breve.animart.dev">Breve</a>: The Flagship Language of Anima
+			</h1>
+			<div class="hy card flex vertical center override">
+				<div class="hy subcard flex horizontal center">
+					<code class="hy left-text">
+						<span style="color:lightblue;">import</span> core<span style="color: lightcoral">;</span>
+						<span style="color:lightblue;">using</span> core<span style="color: lightcoral">.</span>IO<span style="color: lightcoral">;</span>
+		
+						<span style="color: lightblue;">main</span> </span> <span style="color: lightcoral">{</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: lightgreen;">writeLine</span><span style="color: lightcoral">(</span><span style="color: gold">"Hello, World!"</span><span style="color: lightcoral">);</span>
+						<span style="color: lightcoral">}</span>
+		
+					</code>
+					<div class="hy description">
+						<p class="hy center-text" style="font-weight: bold;">
+							Simplicity meets modernity.
+						</p>
+						<p class="hy center-text">
+							Write less, and make more.
+						</p>
+					</div>
+				</div>
+				<div class="hy subcard flex horizontal center center-text">
+					<code class="hy left-text">
+						<span style="color:lightblue;">import</span> core<span style="color: lightcoral">;</span>
+						<span style="color:lightblue;">using</span> core<span style="color: lightcoral">.</span>Convert<span style="color: lightcoral">;</span>
+						<span style="color:lightblue;">using</span> core<span style="color: lightcoral">.</span>IO<span style="color: lightcoral">;</span>
+	
+						<span style="color:lightblue;">namespace</span> Hello <span style="color: lightcoral">{</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:lightblue;">macro</span> greet <span style="color: lightcoral">{</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: lightcoral">{ </span>$name<span style="color: lightcoral">:</span><span style="color: lightblue">str</span> <span style="color: lightcoral">}</span> <span style="color: lightcoral">=></span> <span style="color: lightcoral">{ (</span><span style="color: gold">"Hello, "</span> <span style="color: lightcoral">+</span> <span style="color: lightcoral">(</span>$name <span style="color: lightcoral">+</span> <span style="color: gold">"!"</span><span style="color: lightcoral">)) }</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: lightcoral">{ </span>$name<span style="color: lightcoral">:</span><span style="color: lightblue">expr</span> <span style="color: lightcoral">}</span> <span style="color: lightcoral">=></span> <span style="color: lightcoral">{ (</span><span style="color: gold">"Hello, "</span> <span style="color: lightcoral">+</span> <span style="color: lightcoral">(</span><span style="color: lightgreen;">toString</span><span style="color: lightcoral">(</span>$name<span style="color: lightcoral">) +</span> <span style="color: gold">"!"</span><span style="color: lightcoral">)) }</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: lightcoral">}</span>
+							<span style="color: lightcoral">}</span>
+	
+						<span style="color: lightblue;">main</span> </span> <span style="color: lightcoral">{</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: lightgreen;">writeLine</span><span style="color: lightcoral">(</span>Hello<span style="color: lightcoral">.</span>greet <span style="color: gold">"someone"</span><span style="color: lightcoral">);</span>
+						<span style="color: lightcoral">}</span>
+					</code>
+					<div class="hy description">
+						<p class="hy center-text" style="font-weight: bold;">
+							Clean, but powerful macro system.
+						</p>
+						<p class="hy center-text">
+							Scoped, descriptive, complex and hygenic.
+						</p>
+						<p class="hy center-text">
+							Have your code write itself elegantly, but without biting more than it can chew.
+						</p>
+					</div>
+				</div>
 			</div>
-		</div>
-		<h1 class="hy center-text no-color" style="box-shadow: none; margin-top: -0.4em; margin-bottom: -0.6em; width: 80vw;">
-			But Why Anima?
-		</h1>
-		<div class="hy card flex horizontal center">
-			<div class="hy subcard">
-				<h2 class="hy">Rich Macro System</h2>
-			</div>
-			<div class="hy subcard">
-			</div>
-			<div class="hy subcard">
+			<h1 class="hy center-text no-color" style="box-shadow: none; margin-top: -0.4em; margin-bottom: -0.6em; width: 80vw;">
+				But Why Anima?
+			</h1>
+			<div class="hy card flex horizontal center override">
+				<div class="hy subcard">
+				</div>
+				<div class="hy subcard">
+				</div>
+				<div class="hy subcard">
+				</div>
 			</div>
 		</div>
 	</div>

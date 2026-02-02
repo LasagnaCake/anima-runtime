@@ -48,6 +48,25 @@ body.hy {
 	mask-image: linear-gradient(calc(-90deg), white, white 50%, transparent 95%, transparent);
 }
 
-.hy.card {
+.override {
+	min-width: 100%;
+}
+
+.hy.subcard {
 	max-width: none;
+	width: 97% !important;
+}
+
+code {
+	width: 60%!important;
+	background-color: #222;
+	color: white !important;
+	padding: 0.3em 0.6em;
+	margin-inline: 0.3em;
+	border-radius: inherit;
+	box-shadow: 0px 3px 6px color-mix(in oklab, black, transparent);
+}
+
+.description {
+	width: 36% !important;
 }
