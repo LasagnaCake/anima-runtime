@@ -49,5 +49,5 @@ body.hy {
 }
 
 .hy.card {
-	max-width: unset;
+	max-width: none;
 }
