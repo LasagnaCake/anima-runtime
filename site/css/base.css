@@ -1,0 +1,38 @@
+@import url("https://hy.purplecheshire.net/hy.css");
+@import url("https://hy.purplecheshire.net/hyacinth/fonts/ibm-plex-sans.css");
+
+.hy {
+	--main-color: #04f;
+}
+
+@media (prefers-color-scheme: light) {
+	.hy {
+		--sub-color: color-mix(in oklab, var(--main-color), white);
+		--theme: white;
+		--inverse: black;
+		--text: black;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hy {
+		--sub-color: color-mix(in oklab, var(--main-color), black);
+		--theme: color-mix(in oklab, black, var(--main-color) 20%);
+		--inverse: white;
+		--text: white;
+	}
+
+	.hy.button.action:hover {
+		background-color: color-mix(in oklab, var(--main-color), var(--inverse));
+		color: var(--theme);
+	}
+
+	.hy.button.action:active {
+		color: color-mix(in oklab, var(--main-color), var(--inverse));
+		background-color: color-mix(in oklab, var(--theme), var(--main-color));
+	}
+}
+
+body.hy {
+	background-color: var(--theme);
+}
