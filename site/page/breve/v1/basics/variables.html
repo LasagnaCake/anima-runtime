@@ -11,11 +11,95 @@
             <iframe class="hy display" src="../nav.html">The fuck?</iframe>
         </div>
         <div class="hy app wide flex vertical center left-text">
-            <h2 class="hy">Code Structure</h2>
+            <h2 class="hy">Variables</h2>
             <p class="hy">
-                If you open a new project's
-                <code class="hy inline">main.bv</code> file in your text editor,
-                you should see the following:
+                Variables are a way to store data in Breve. These come in many
+                different flavours:
+            </p>
+            <p class="hy">
+                <code class="hy inline"><span class="kw">local</span></code>
+                <strong>variables</strong>: These are stored in the
+                <strong>stack</strong>, and can only be utilized in the scope
+                they are declared in.
+            </p>
+            <p class="hy">
+                <code class="hy inline"><span class="kw">global</span></code>
+                <strong>variables</strong>: These are stored in the
+                <strong>global space</strong>. While their declarations are
+                scoped, their value can be accessed from any scope, by using the
+                same <strong>address name</strong>. Declared as
+                <code class="hy inline">
+                    <span class="kw">global</span><span class="op">[</span
+                    ><span class="str">"&lt;address name&gt;"</span
+                    ><span class="op">]</span></code
+                >.
+            </p>
+            <p class="hy">
+                <code class="hy inline"><span class="kw">register</span></code>
+                <strong>variables</strong>: These are stored in the
+                <strong>register space</strong>. There are 32 general-purpose
+                registers in the ARTE, and these are used by internal functions.
+                Declared as
+                <code class="hy inline">
+                    <span class="kw">global</span><span class="op">[</span
+                    ><span class="num">&lt;register index&gt;</span
+                    ><span class="op">]</span></code
+                >.
+            </p>
+            <p class="hy">
+                <code class="hy inline"><span class="kw">temporary</span></code>
+                <strong>variables</strong>: These are stored in the
+                <strong>temporary space</strong>. This space is also used for
+                storing results (be it functions, expressions, operators, etc.),
+                so it is not guaranteed its value will be consistent to what you
+                set.
+            </p>
+            <p class="hy">
+                <code class="hy inline"><span class="kw">out</span></code>
+                <strong>variables</strong>: These variables are stored in an
+                implementation-defined place. This behaviour varies from one
+                ARTE implementation to another, as it is intended to be one way
+                for cross-language communication.
+                <strong>This variable location can only be read from.</strong>
+            </p>
+            <p>
+                If a location is not defined in a variable declaration, the
+                default is
+                <code class="hy inline"><span class="kw">local</span></code
+                >.
+            </p>
+            <h2 class="hy">Declarations</h2>
+            <p>Variables are declared as such:</p>
+            <code class="hy block">
+                &lt;name&gt;
+                <span class="op">:</span> &lt;type&gt;
+                <span class="op">=</span> &lt;value&gt;
+                <br />
+                <br />
+                <span class="memo">// or</span>
+                <br />
+                <br />
+                &lt;location&gt; &lt;name&gt;
+                <span class="op">:</span> &lt;type&gt;
+                <span class="op">=</span> &lt;value&gt;</code
+            >
+            <p>Where:</p>
+            <p>
+                <code class="hy inline">&lt;location&gt;</code> is one of the
+                previously-mentioned locations.
+            </p>
+            <p>
+                <code class="hy inline">&lt;name&gt;</code> is the variable's
+                name. Follows the same rules as variable names in other
+                languages.
+            </p>
+            <p>
+                <code class="hy inline">&lt;type&gt;</code> is the variable's
+                type.
+            </p>
+            <p>
+                <code class="hy inline">&lt;value&gt;</code> is the variable's
+                value.
             </p>
         </div>
     </body>

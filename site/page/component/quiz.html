@@ -2,14 +2,15 @@
 <html>
     <script>
         const query = decodeURIComponent(location.href.split("?::")[1]).replace(
-            /'/g,
+            /`/g,
             '"',
         );
         console.log(query);
         let data = JSON.parse(query);
+        console.log(data);
         let answer = 0;
         function set(e) {
-            answer = e.target.value;
+            answer = parseInt(e.target.value);
             const display = document.getElementById("display");
             display.hidden = true;
             display.className = "";
@@ -22,7 +23,7 @@
             } else {
                 display.className += " " + "danger";
             }
-            display.innerText = data[answer]["message"];
+            display.innerText = data["answers"][answer]["message"];
         }
         function verify() {
             const display = document.getElementById("display");
@@ -53,11 +54,12 @@
                 })(),
             );
             let i = 0;
-            for (answer in data["answers"]) {
+            for (const answer of data["answers"]) {
+                console.log(answer);
                 container.appendChild(
                     (() => {
-                        const answer = document.createElement("label");
-                        answer.appendChild(
+                        const disp = document.createElement("label");
+                        disp.appendChild(
                             (() => {
                                 const select = document.createElement("input");
                                 select.type = "radio";
@@ -69,19 +71,26 @@
                                 return select;
                             })(),
                         );
-                        answer.appendChild(
+                        disp.appendChild(
                             (() => {
                                 const select = document.createElement("span");
                                 select.className += " " + "hy";
                                 select.className += " " + "input-view";
-                                select.innerText = answer["value"];
+                                select.innerHTML = answer["value"];
                                 return select;
                             })(),
                         );
-                        return answer;
+                        return disp;
                     })(),
                 );
             }
+            container.appendChild(
+                (() => {
+                    const hr = document.createElement("hr");
+                    hr.className += "hy";
+                    return hr;
+                })(),
+            );
             container.appendChild(
                 (() => {
                     const act = document.createElement("input");
@@ -112,7 +121,7 @@
         <meta charset="UTF-8" />
         <title>Breve</title>
         <link rel="icon" href="res/icon/logo-v1b-small.png" />
-        <link rel="stylesheet" href="../../../css/style.css" />
+        <link rel="stylesheet" href="../../css/style.css" />
     </head>
     <body class="hy" style="background-color: white" onload="build()">
         <div class="hy flex vertical left" id="quiz"></div>

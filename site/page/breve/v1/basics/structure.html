@@ -13,7 +13,7 @@
         <div class="hy app wide flex vertical center left-text">
             <h2 class="hy">Code Structure</h2>
             <p class="hy">
-                If you open a new project's
+                If you open a new project`s
                 <code class="hy inline">main.bv</code> file in your text editor,
                 you should see the following:
             </p>
@@ -34,7 +34,7 @@
                 <span class="op">}</span>
             </code>
             <p class="hy">
-                Let's break the code down and explore it, line-by-line.
+                Let`s break the code down and explore it, line-by-line.
             </p>
             <p class="hy">
                 <code class="hy inline"
@@ -82,9 +82,18 @@
                     ><span class="str">"Hello, World!"</span></code
                 >. All of these concepts will be explained later.
             </p>
-            <div class="hy card">
+            <div class="hy card" style="min-height: 30em;">
                 <h3 class="hy">Quiz Time!</h3>
-                <iframe class="hy" src="../quiz.html?::{'question':'If we were to run this code, what would it do?','answers':[{'value':'Nothing','message':'Nothing!'}], 'correct':0}"></iframe>
+                <iframe class="hy" style="height: 25em;" src="../../../component/quiz.html?::{
+                    `question`: `If we were to compile and run this code, what would it do?`,
+                    `answers`: [
+                        {`value`:`It would give a compiler error.`, `message`:`Wrong! The code does compile without errors.`},
+                        {`value`:`It would compile, but it does nothing.`, `message`:`Wrong! The code does output something.`},
+                        {`value`:`It prints <code class='hy inline'>Hello, World!</code> to the console.`, `message`:`Correct!`},
+                        {`value`:`It displays <code class='hy inline'>Hello, World!</code> in a popup.`, `message`:`Wrong! While the code displays that, it is not in a popup window.`}
+                    ],
+                    `correct`: 2
+                }"></iframe>
                 </div>
             </div>
         </div>
