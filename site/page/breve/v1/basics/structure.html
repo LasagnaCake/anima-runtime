@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Breve</title>
+        <link rel="icon" href="res/icon/logo-v1b-small.png" />
+        <link rel="stylesheet" href="../../../../css/style.css" />
+    </head>
+    <body class="hy" style="background-color: white">
+        <div class="hy sidebar">
+            <iframe class="hy display" src="../nav.html">The fuck?</iframe>
+        </div>
+        <div class="hy app wide flex vertical center left-text">
+            <h2 class="hy">Code Structure</h2>
+            <p class="hy">
+                If you open a new project's
+                <code class="hy inline">main.bv</code> file in your text editor,
+                you should see the following:
+            </p>
+            <code class="hy block">
+                <span class="kw">import</span>
+                core<span class="op">;</span> <br /><br />
+                <span class="kw">main</span>
+                <span class="op">{</span><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="memo"
+                    >// Main code goes here...</span
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;core<span class="op">.</span>IO<span
+                    class="op"
+                    >.</span
+                ><span class="macro">writeLine</span><span class="op">(</span
+                ><span class="str">"Hello, World!"</span
+                ><span class="op">);</span><br />
+                <span class="op">}</span>
+            </code>
+            <p class="hy">
+                Let's break the code down and explore it, line-by-line.
+            </p>
+            <p class="hy">
+                <code class="hy inline"
+                    ><span class="kw">import</span> core<span class="op"
+                        >;</span
+                    ></code
+                >: An <em>import</em> statement. These will be discussed later,
+                but essentially &RightArrow; this is how you import modules and
+                files.
+            </p>
+            <p class="hy">
+                <code class="hy inline">
+                    <span class="kw">main</span>
+                    <span class="op">{</span></code
+                >: The <em>Main Block</em>. Where your code actually runs. It is
+                <strong>required</strong> for programs, and
+                <strong>ignored</strong> in modules. All the code within the
+                brackets gets executed (and these brackets are
+                <strong>mandatory</strong>).
+            </p>
+            <p class="hy">
+                <code class="hy inline">
+                    <span class="memo">// Main code goes here...</span></code
+                >: A line comment. Does not get executed, and only serves for
+                documentation, or little notes. Block comments can be declared
+                via
+                <code class="hy inline">
+                    <span class="memo">/* ... */</span></code
+                >.
+            </p>
+            <p class="hy">
+                <code class="hy inline">
+                    core<span class="op">.</span>IO<span class="op">.</span
+                    ><span class="fn">writeLine</span><span class="op">(</span
+                    ><span class="str">"Hello, World!"</span
+                    ><span class="op">);</span></code
+                >: An <em>expression</em>. Expressions are the building blocks
+                of your program. In this case, this expression calls the macro
+                <code class="hy inline"
+                    ><span class="macro">writeLine</span></code
+                >, that lives in the namespace
+                <code class="hy inline">IO</code> in the module
+                <code class="hy inline">core</code>, with the string<code
+                    class="hy inline"
+                    ><span class="str">"Hello, World!"</span></code
+                >. All of these concepts will be explained later.
+            </p>
+        </div>
+    </body>
+</html>
