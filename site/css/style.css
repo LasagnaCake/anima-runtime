@@ -36,12 +36,3 @@
         background-color: color-mix(in oklab, var(--theme), var(--main-color));
     }
 }
-
-code.hy.block {
-    border-radius: 0.6em;
-}
-
-code.hy.inline {
-    padding: 0.1em 0.3em;
-    border-radius: 0.4em;
-}
