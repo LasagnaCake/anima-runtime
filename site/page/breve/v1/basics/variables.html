@@ -84,7 +84,7 @@
                     `answers`: [
                         {`value`:`It would give a compiler error.`, `message`:`Wrong! <code class='hy'><span class='kw'>temporary</span></code> variables are valid variables.`},
                         {`value`:`The value is inconsistent.`, `message`:`Correct! The value is not guaranteed to remain the same.`},
-                        {`value`:`It causes undefined behaviour when used.`, `message`:`Wrong! Its behaviour is defined.`},
+                        {`value`:`It causes undefined behaviour when used.`, `message`:`Wrong! Its behaviour is defined, just not guaranteed.`},
                         {`value`:`It is a read-only source location.`, `message`:`Wrong! Those are <code class='hy'><span class='kw'>out</span></code> variables.`}
                     ],
                     `correct`: 1
@@ -101,27 +101,27 @@
             <p>Where:</p>
             <p>
                 <code class="hy inline">&lt;location&gt;</code> is one of the
-                previously-mentioned locations. <bold>Optional.</bold>
+                previously-mentioned locations. <strong>Optional.</strong>
             </p>
             <p>
                 <code class="hy inline">&lt;name&gt;</code> is the variable's
                 name. Follows the same rules as variable names in other
-                languages. <bold>Required.</bold>
+                languages. <strong>Required.</strong>
             </p>
             <p>
                 <code class="hy inline">&lt;type&gt;</code> is the variable's
                 type. These can be basic types, or classes.
-                <bold
-                    >Optional if <code class="hy">&lt;value&gt;</code> is
-                    set.</bold
+                <strong
+                    >Optional if <code class="hy inline">&lt;value&gt;</code> is
+                    set.</strong
                 >
             </p>
             <p>
                 <code class="hy inline">&lt;value&gt;</code> is the variable's
                 value.
-                <bold
-                    >Optional if <code class="hy">&lt;type&gt;</code> is
-                    set.</bold
+                <strong
+                    >Optional if <code class="hy inline">&lt;type&gt;</code> is
+                    set.</strong
                 >
             </p>
         </div>
