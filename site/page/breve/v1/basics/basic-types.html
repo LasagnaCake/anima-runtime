@@ -230,8 +230,9 @@
                 </table>
             </div>
             <p class="hy">
-                All types in Breve are checked at compile-time. Numeric types
-                are automatically converted between each other on any operation.
+                All types in Breve are checked at compile-time for type safety.
+                Numeric types are automatically converted between each other on
+                any operation.
             </p>
             <p class="hy">
                 To assign the default value for a given basic type, you can use
@@ -250,6 +251,17 @@
                 var1 <span class="op">=</span> <span class="kw">uint</span
                 ><span class="op">;</span><br />
             </code>
+            <hr class="hy" />
+            <h2 class="hy">
+                The
+                <code class="hy inline"><span class="kw">any</span></code> Type
+            </h2>
+            <p class="hy">
+                The
+                <code class="hy inline"><span class="kw">any</span></code> type
+                is a special compiler-only type, that indicates that the data
+                <strong>can map to any other type</strong>.
+            </p>
         </div>
     </body>
 </html>
