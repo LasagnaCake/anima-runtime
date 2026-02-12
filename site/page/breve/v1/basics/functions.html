@@ -59,16 +59,49 @@
                 <code class="hy inline">&lt;type&gt;</code> is the function's
                 return type.
                 <strong
-                    >Optional, defaults to
-                    <code class="hy inline"><span class="kw">void</span></code
-                    >.</strong
+                    >Optional for non-forward declarations, defaults to
+                    auto-deducing the type.</strong
                 >
             </p>
             <p class="hy">
                 Thusly, a function can be declared like the following:
             </p>
             <code class="hy block">
-                <span class="kw">function</span> f1<span class="op">()</span>
+                <span class="memo"
+                    >// Declaring the function here, code comes later</span
+                ><br />
+                <span class="kw">function</span>
+                <span class="fn">doNothing</span><span class="op">():</span>
+                <span class="kw">void</span><span class="op">;</span
+                ><br /><br />
+                <span class="memo">// Declaring a single-line function</span
+                ><br />
+                <span class="kw">func</span> <span class="fn">square</span
+                ><span class="op">(</span>num<span class="op">:</span>
+                <span class="kw">real</span><span class="op">):</span>
+                <span class="kw">real</span> <span class="op">=&gt; (</span>num
+                <span class="op">*</span> num<span class="op">);</span
+                ><br /><br />
+                <span class="memo">// Declaring a full function</span><br />
+                <span class="kw">fn</span> <span class="fn">factorial</span
+                ><span class="op">(</span>num<span class="op">:</span>
+                <span class="kw">uint</span><span class="op">):</span>
+                <span class="kw">uint</span>
+                <span class="op">{</span><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;out <span class="op">=</span>
+                <span class="num">0</span><span class="op">;</span><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">repeat</span> i
+                <span class="op">:</span> num
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out
+                <span class="op">+=</span> <span class="op">(</span>i
+                <span class="op">+</span> <span class="num">1</span
+                ><span class="op">);</span><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> out<span
+                    class="op"
+                    >;</span
+                ><br />
+                <span class="op">}</span><br /><br />
             </code>
         </div>
     </body>
