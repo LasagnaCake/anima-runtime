@@ -31,12 +31,14 @@
             <p class="hy">
                 And can be followed by
                 <code class="hy inline"><span class="op">=&gt;</span></code> and
-                an expression, or
+                an expression,
                 <code class="hy inline"
                     ><span class="op">{</span> <span class="memo">...</span>
                     <span class="op">}</span></code
                 >
-                for a code block. For each part:
+                for a code block, or
+                <code class="hy inline"><span class="op">;</span></code> for
+                forward declarations. For each part:
             </p>
             <p class="hy">
                 <code class="hy inline">&lt;name&gt;</code> the function's name,
@@ -46,9 +48,11 @@
             <p class="hy">
                 <code class="hy inline">&lt;arg&gt;</code> is a function
                 argument. These are declared like variables, but
-                <strong>without the location specifier</strong>, and can have
-                any amount. If more than one, each argument must be separated by
-                a comma.
+                <strong>without the location specifier</strong>, and can have up
+                to 255 arguments. If more than one, each argument must be
+                separated by a comma. If an argument has a default value, that
+                argument <strong>must</strong> be placed after all required
+                arguments.
                 <strong>Optional.</strong>
             </p>
             <p class="hy">
@@ -60,6 +64,12 @@
                     >.</strong
                 >
             </p>
+            <p class="hy">
+                Thusly, a function can be declared like the following:
+            </p>
+            <code class="hy block">
+                <span class="kw">function</span> f1<span class="op">()</span>
+            </code>
         </div>
     </body>
 </html>
