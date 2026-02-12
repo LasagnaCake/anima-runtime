@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Breve</title>
+        <link rel="icon" href="res/icon/logo-v1b-small.png" />
+        <link rel="stylesheet" href="../../../../css/style.css" />
+    </head>
+    <body class="hy" style="background-color: white">
+        <div class="hy sidebar">
+            <iframe class="hy display" src="../nav.html">The fuck?</iframe>
+        </div>
+        <div class="hy app wide flex vertical center left-text">
+            <h2 class="hy">Basic Types</h2>
+            <p class="hy">
+                Breve possesses a few basic types that map directly to Anima's
+                underlying value types:
+            </p>
+            <div class="hy card flex horizontal">
+                <table class="hy alternate">
+                    <tr class="hy">
+                        <th class="hy">Type</th>
+                        <th class="hy">Description</th>
+                        <th class="hy">Default Value</th>
+                        <th class="hy">Range</th>
+                    </tr>
+                    <tr class="hy">
+                        <td class="hy center-text">
+                            <code class="hy inline"
+                                ><span class="kw">signed</span></code
+                            ><br />
+                            or<br />
+                            <code class="hy inline"
+                                ><span class="kw">int</span></code
+                            >
+                        </td>
+                        <td class="hy">Signed 64-bit integer.</td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="num">0</span></code
+                            >
+                        </td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="num"
+                                    >-9,223,372,036,854,775,808</span
+                                ></code
+                            ><br />
+                            to<br />
+                            <code class="hy inline">
+                                <span class="num"
+                                    >9,223,372,036,854,775,807</span
+                                ></code
+                            >, inclusive.
+                        </td>
+                    </tr>
+                    <tr class="hy">
+                        <td class="hy center-text">
+                            <code class="hy inline"
+                                ><span class="kw">unsigned</span></code
+                            >
+                            or
+                            <code class="hy inline"
+                                ><span class="kw">uint</span></code
+                            >
+                        </td>
+                        <td class="hy">Unsigned 64-bit integer.</td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="num">0</span></code
+                            >
+                        </td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="num">0</span></code
+                            ><br />
+                            to<br />
+                            <code class="hy inline">
+                                <span class="num"
+                                    >18,446,744,073,709,551,615</span
+                                ></code
+                            >, inclusive.
+                        </td>
+                    </tr>
+                    <tr class="hy">
+                        <td class="hy center-text">
+                            <code class="hy inline"
+                                ><span class="kw">float</span></code
+                            >
+                            or
+                            <code class="hy inline"
+                                ><span class="kw">real</span></code
+                            >
+                        </td>
+                        <td class="hy">
+                            64-bit (double-precision) floating-point number.
+                        </td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="num">0.0</span></code
+                            >
+                        </td>
+                        <td class="hy">
+                            <span
+                                style="
+                                    font-family:
+                                        Cambria, Cochin, Georgia, Times,
+                                        &quot;Times New Roman&quot;, serif;
+                                "
+                                ><em
+                                    >&PlusMinus;1.7 &times; 10<sup
+                                        >&PlusMinus;308</sup
+                                    ></em
+                                ></span
+                            >.
+                        </td>
+                    </tr>
+                    <tr class="hy">
+                        <td class="hy center-text">
+                            <code class="hy inline"
+                                ><span class="kw">string</span></code
+                            >
+                            or
+                            <code class="hy inline"
+                                ><span class="kw">str</span></code
+                            >
+                        </td>
+                        <td class="hy">Text string.</td>
+                        <td class="hy">
+                            Empty string (<code class="hy inline"
+                                ><span class="str">""</span></code
+                            >).
+                        </td>
+                        <td class="hy">18,446,744,073,709,551,615 bytes.</td>
+                    </tr>
+                    <tr class="hy">
+                        <td class="hy center-text">
+                            <code class="hy inline"
+                                ><span class="kw">bytes</span></code
+                            >
+                            or
+                            <code class="hy inline"
+                                ><span class="kw">bin</span></code
+                            >
+                        </td>
+                        <td class="hy">Binary data.</td>
+                        <td class="hy">No bytes.</td>
+                        <td class="hy">18,446,744,073,709,551,615 bytes.</td>
+                    </tr>
+                    <tr class="hy">
+                        <td class="hy center-text">
+                            <code class="hy inline"
+                                ><span class="kw">array</span></code
+                            >
+                            or
+                            <code class="hy inline"
+                                ><span class="kw">arr</span></code
+                            >
+                        </td>
+                        <td class="hy">Dynamic list of values.</td>
+                        <td class="hy">
+                            Empty array (<code class="hy inline"
+                                ><span class="op">[]</span></code
+                            >).
+                        </td>
+                        <td class="hy">18,446,744,073,709,551,615 elements.</td>
+                    </tr>
+                    <tr class="hy">
+                        <td class="hy center-text">
+                            <code class="hy inline"
+                                ><span class="kw">object</span></code
+                            >
+                            or
+                            <code class="hy inline"
+                                ><span class="kw">obj</span></code
+                            >
+                        </td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="kw">string</span></code
+                            >&mdash;mapped collection of values.
+                        </td>
+                        <td class="hy">Empty object.</td>
+                        <td class="hy">
+                            18,446,744,073,709,551,615 entries, with each key
+                            being a
+                            <code class="hy inline"
+                                ><span class="kw">string</span></code
+                            >.
+                        </td>
+                    </tr>
+                    <tr class="hy">
+                        <td class="hy center-text">
+                            <code class="hy inline"
+                                ><span class="kw">null</span></code
+                            >
+                            or
+                            <code class="hy inline"
+                                ><span class="kw">nil</span></code
+                            >
+                        </td>
+                        <td class="hy">
+                            Null value. Indicates that the
+                            <strong>value does not exist</strong>.
+                        </td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="kw">null</span></code
+                            >
+                        </td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="num">null</span></code
+                            >.
+                        </td>
+                    </tr>
+                    <tr class="hy">
+                        <td class="hy center-text">
+                            <code class="hy inline"
+                                ><span class="kw">undefined</span></code
+                            >
+                            or
+                            <code class="hy inline"
+                                ><span class="kw">void</span></code
+                            >
+                        </td>
+                        <td class="hy">
+                            Empty. Different from null, as it indicates that the
+                            <strong>source itself does not exist</strong>
+                            whatsoever.
+                        </td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="kw">void</span></code
+                            >
+                        </td>
+                        <td class="hy">
+                            <code class="hy inline"
+                                ><span class="num">void</span></code
+                            >.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p class="hy">
+                All types in Breve are checked at compile-time for type safety.
+                Numeric types are automatically converted between each other on
+                any operation.
+            </p>
+            <p class="hy">
+                To assign the default value for a given basic type, you can use
+                the provided value in the "Default Value" column, or you can
+                simply assign the type itself:
+            </p>
+            <code class="hy block">
+                <span class="memo"
+                    >// Assigns an unsigned integer of value 0</span
+                ><br />
+                var1 <span class="op">=</span> <span class="num">0</span
+                ><span class="op">;</span><br /><br />
+                <span class="memo"
+                    >// Also assigns an unsigned integer of value 0</span
+                ><br />
+                var1 <span class="op">=</span> <span class="kw">uint</span
+                ><span class="op">;</span><br />
+            </code>
+            <hr class="hy" />
+            <h2 class="hy">
+                The
+                <code class="hy inline"><span class="kw">any</span></code> Type
+            </h2>
+            <p class="hy">
+                The
+                <code class="hy inline"><span class="kw">any</span></code> type
+                is a special compiler type that indicates that the data
+                <strong>can map to the value of any other type</strong>.
+            </p>
+            <p class="hy">
+                While it can <em>receive</em> any value, only
+                <code class="hy inline"><span class="kw">any</span></code> types
+                can assign to other
+                <code class="hy inline"><span class="kw">any</span></code> types
+                without casting.
+            </p>
+            <hr class="hy" />
+            <h2 class="hy">Casting</h2>
+            <p class="hy">
+                Casting allows the programmer to convert a value of a given type
+                to another. it is done with the
+                <code class="hy inline"><span class="kw">as</span></code>
+                operator.
+            </p>
+            <code class="hy block">
+                example<span class="op">:</span> <span class="kw">int</span>
+                <span class="op">=</span> <span class="op">(</span
+                ><span class="num">2.08</span> <span class="kw">as</span>
+                <span class="kw">int</span><span class="op">);</span>
+            </code>
+            <p class="hy">
+                Both the source and destination types are checked if they are
+                compatible.
+                <code class="hy inline"><span class="kw">any</span></code>
+                is automatically assumed to be castable.
+            </p>
+            <div class="hy card alert soft danger pop">
+                <h3 class="hy alert loud danger pop center-text">Caution!</h3>
+                <p class="hy">
+                    Be careful when casting from
+                    <code class="hy inline"><span class="kw">any</span></code>
+                    to any type! Make sure you check at runtime that the
+                    destination type is the expected type!
+                </p>
+            </div>
+            <div class="hy card" style="min-height: 30em">
+                <h3 class="hy">Quiz Time!</h3>
+                <iframe
+                    class="hy"
+                    style="height: 25em"
+                    src="../../../component/quiz.html?::{
+                    `question`: `Which type can be casted to, and from, any type?`,
+                    `answers`: [
+                        {`value`:`<code class='hy inline'><span class='kw'>any</span></code>.`, `message`:`Correct! <code class='hy inline'><span class='kw'>any</span></code> can be casted-to and casted-from <em>any</em> type.`},
+                        {`value`:`<code class='hy inline'><span class='kw'>object</span></code>.`, `message`:`Wrong!`},
+                        {`value`:`<code class='hy inline'><span class='kw'>null</span></code>.`, `message`:`Wrong!`},
+                        {`value`:`<code class='hy inline'><span class='kw'>string</span></code>.`, `message`:`Wrong!`}
+                    ],
+                    `correct`: 0
+                }"
+                ></iframe>
+            </div>
+        </div>
+    </body>
+</html>

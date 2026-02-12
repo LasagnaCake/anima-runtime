@@ -91,6 +91,7 @@
                 }"
                 ></iframe>
             </div>
+            <hr class="hy" />
             <h2 class="hy">Declarations</h2>
             <p class="hy">Variables are declared as such:</p>
             <code class="hy block">
@@ -125,7 +126,41 @@
                 >
             </p>
             <p class="hy">Thusly, variables can be declared as:</p>
-            <code class="hy block"> </code>
+            <code class="hy block">
+                var1<span class="op">:</span> <span class="kw">int</span
+                ><span class="op">;</span><br />var2 <span class="op">=</span>
+                <span class="num">0.2f</span><span class="op">;</span>
+                <br />var3<span class="op">:</span> <span class="kw">uint</span>
+                <span class="op">=</span> <span class="num">5</span
+                ><span class="op">;</span> <br /><span class="kw">local</span>
+                var4<span class="op">:</span> <span class="kw">string</span
+                ><span class="op">;</span><br /><span class="kw">local</span>
+                var5 <span class="op">=</span>
+                <span class="str">"This is a variable!"</span
+                ><span class="op">;</span><br /><span class="kw">local</span>
+                var6<span class="op">:</span> <span class="kw">string</span>
+                <span class="op">=</span>
+                <span class="str">"This is another variable!"</span
+                ><span class="op">;</span>
+            </code>
+            <p class="hy">And many other ways.</p>
+            <div class="hy card" style="min-height: 30em">
+                <h3 class="hy">Quiz Time!</h3>
+                <iframe
+                    class="hy"
+                    style="height: 25em"
+                    src="../../../component/quiz.html?::{
+                    `question`: `Which of the following statements is true?`,
+                    `answers`: [
+                    {`value`:`If the variable's location is not set, it defaults to <code class='hy inline'><span class='kw'>global</span></code>.`, `message`:`Wrong! It defaults to <code class='hy inline'><span class='kw'>local</span></code>.`},
+                        {`value`:`The variable's type can always be ommitted.`, `message`:`Wrong! The type can only be ommitted when the variable is assigned a value.`},
+                        {`value`:`The variable must always have a value.`, `message`:`Wrong! The variable is not required to have a value, if and only if it has a type.`},
+                        {`value`:`The variable must always have a name.`, `message`:`Correct! How else are you going to use it?`}
+                    ],
+                    `correct`: 3
+                }"
+                ></iframe>
+            </div>
         </div>
     </body>
 </html>
