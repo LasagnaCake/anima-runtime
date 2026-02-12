@@ -110,9 +110,33 @@
                 External functions are your way of calling cross-language code.
             </p>
             <p class="hy">
+                The code that gets called is implementation-defined by the ARTE
+                implementation.
+            </p>
+            <p class="hy">
                 Declared via the
                 <code class="hy inline"><span class="kw">out</span></code>
                 keyword, followed by how one would forward declare a function.
+            </p>
+            <h2 class="hy">Shared Functions</h2>
+            <p class="hy">
+                Shared functions, much like external functions, are also for
+                calling cross-language code.
+            </p>
+            <p class="hy">
+                Unlike external functions, shared functions calls code defined
+                in a shared library.
+            </p>
+            <p class="hy">
+                Declared like
+                <code class="hy inline"
+                    ><span class="kw">out shared</span><span class="op">[</span
+                    ><span class="str">"&lt;LIBRARY NAME&gt;"</span>
+                    <span class="op">:</span>
+                    <span class="str">"&lt;FUNCTION NAME&gt;"</span
+                    ><span class="op">]</span></code
+                >
+                , followed by how one would forward declare a function.
             </p>
         </div>
     </body>
