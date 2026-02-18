@@ -102,25 +102,21 @@
                 var1 <span class="op">=</span>
                 <span class="kw">ref</span> var2<span class="op">;</span>
             </code>
-            <!-- --
             <div class="hy card" style="min-height: 30em">
                 <h3 class="hy">Quiz Time!</h3>
                 <iframe
                     class="hy"
                     style="height: 25em"
                     src="../../../component/quiz.html?::{
-                    `question`: `Which type can be casted to, and from, any type?`,
+                    `question`: `If after the last line one were to add <code class='hy inline'>var3 <span class='op'>+=</span> <span class='str'>' This is a new line!'</span></code>,<br/>the value in <code class='hy inline'>var1</code> would be unaffected.`,
                     `answers`: [
-                        {`value`:`<code class='hy inline'><span class='kw'>any</span></code>.`, `message`:`Correct! <code class='hy inline'><span class='kw'>any</span></code> can be casted-to and casted-from <em>any</em> type.`},
-                        {`value`:`<code class='hy inline'><span class='kw'>object</span></code>.`, `message`:`Wrong!`},
-                        {`value`:`<code class='hy inline'><span class='kw'>null</span></code>.`, `message`:`Wrong!`},
-                        {`value`:`<code class='hy inline'><span class='kw'>string</span></code>.`, `message`:`Wrong!`}
+                        {`value`:`True.`, `message`:`Correct! <code class='hy inline'>var3</code> holds a completely new value, not a reference to another.`},
+                        {`value`:`False.`, `message`:`Wrong!`}
                     ],
                     `correct`: 0
                 }"
                 ></iframe>
             </div>
-            -->
         </div>
     </body>
 </html>
