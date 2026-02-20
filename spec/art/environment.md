@@ -14,8 +14,8 @@ One temporary store.
 
 It must also provide the following execution contexts:
 
-- **Strict Mode:** Crashes on erroneous behaviour.
-- **Loose Mode:** Erroneous behaviour results in `void`.
+- **Strict Mode:** Crashes on invalid behaviour.
+- **Loose Mode:** Invalid behaviour results in `void`.
 
 The default execution context must be **strict**.
 
@@ -31,9 +31,11 @@ The runtime must provide a series of pre-defined values, associated with a set o
 |`null`|3|
 |`nan`|4|
 
-## Erronous behaviour
+## Behaviour
 
-The following list contains what the context must consider *erroneous behaviour*: Behaviour that does not crash the program on loose context (and ONLY on loose context).
+### Invalid behaviour
+
+The following list contains what the context must consider *invalid behaviour*: Behaviour that does not crash the program on loose context (and ONLY on loose context).
 
 - Type mismatches on comparisons
 - Type mismatches on internal calls (expected type vs. actual type)
