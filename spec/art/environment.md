@@ -33,9 +33,14 @@ The runtime must provide a series of pre-defined values, associated with a set o
 
 ## Behaviour
 
-### Invalid behaviour
+The runtime must take into account the following kinds of behaviour:
 
-The following list contains what the context must consider *invalid behaviour*: Behaviour that does not crash the program on loose context (and ONLY on loose context).
+- **Invalid Behaviour**: Behaviour that crashes the program only on the **strict** context.
+- **Erroneous Behaviour**: Behaviour that crashes the program on all contexts.
+
+### Invalid Behaviour
+
+The following list contains what the runtime must consider *invalid behaviour*: Behaviour that does not crash the program on loose context (and ONLY on loose context).
 
 - Type mismatches on comparisons
 - Type mismatches on internal calls (expected type vs. actual type)
@@ -47,5 +52,14 @@ The following list contains what the context must consider *invalid behaviour*: 
 - Invalid internal read
 - Invalid N-ary operation type
 - Type mismatches on N-ary operators
+- Invalid fetch request type
 
 For writes in loose context, if the destination does not exist, **it must write to the temporary store**.
+
+## Erroneous Behaviour
+
+The following list contains what the runtime must consider *erroneous behaviour*: Behaviour that crashes the program on any context.
+
+- Invalid casts
+- Invalid jump targets
+-
