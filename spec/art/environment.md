@@ -53,6 +53,7 @@ The following list contains what the runtime must consider *invalid behaviour*: 
 - Invalid N-ary operation type
 - Type mismatches on N-ary operators
 - Invalid fetch request type
+- External function result mismatch (expected type vs. actual type)
 
 For writes in loose context, if the destination does not exist, **it must write to the temporary store**.
 
@@ -62,4 +63,8 @@ The following list contains what the runtime must consider *erroneous behaviour*
 
 - Invalid casts
 - Invalid jump targets
--
+- Invalid instructions
+- Invalid get/set surce types
+- Invalid get/set field accessors
+- Halts that result in errors (duh)
+- Unexpected end-of-bytecode content
