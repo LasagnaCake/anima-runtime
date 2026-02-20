@@ -98,7 +98,7 @@ mode {
 
 ### Mode: Context
 
-See "environment/Structure/Erroneous Behaviour".
+See "Structure/Behaviour/Invalid Behaviour" on [environment.md](environment.md).
 
 |Name|ID|Description|
 |:-:|:-:|:-|
