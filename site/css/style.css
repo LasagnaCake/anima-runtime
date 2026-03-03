@@ -9,7 +9,6 @@ header.hy {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
 }
 
 @media (prefers-color-scheme: light) {
