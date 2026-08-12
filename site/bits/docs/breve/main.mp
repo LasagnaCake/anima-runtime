@@ -43,6 +43,15 @@ html_begin `
                 <li class="hy">Tricks, Tips and Techniques</li>
             </ol>
 		<</nav-section>>
+		<</nav-section>>
+		<<nav-section title="Conventions">>
+            <ol class="hy">
+                <li class="hy">Names</li>
+                <li class="hy">Styling</li>
+                <li class="hy">Declarations</li>
+                <li class="hy">Expressions</li>
+            </ol>
+		<</nav-section>>
 	<</nav-sidebar>>
 	<<content>>
 `
