@@ -70,11 +70,11 @@ html `
         </ul>
 	<</p>>
 	<<note>>
-		<<p>
+		<<p>>
 		    For <<code-inline>><<kw text="repeat"/>><</code-inline>> loops, the iterator variable
 		    <<i>>will start at the given count, and count down until zero is reached!<</i>>
 		<</p>>
-		<<p>
+		<<p>>
 		    To use it as a forward index, make sure to subtract count from it.
 		<</p>>
 	<</note>>
