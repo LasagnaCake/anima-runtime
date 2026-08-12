@@ -76,7 +76,7 @@ html `
 	</ul>
 	<<p>>As for each class of operation:<</p>>
 	<<note>>
-        <<p>>Everything within <<code-inline>><<memo text="[]"/>><</code-inline>> is optional, unless specified.<</p>>
+        <<p>>Everything within grayed-out brackets (<<code-inline>><<memo text="[]"/>><</code-inline>>) is optional, unless specified.<</p>>
 	<</note>>
 	<<topic>>Arithmetic<</topic>>
 	<<expr-table>>
