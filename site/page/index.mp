@@ -101,7 +101,7 @@ html `
 	<</card>>
 	<<title>>But Why Breve?<</title>>
 	<<p>>Breve is...<</p>>
-	<<card>>
+	<div class="hy card flex horizontal center override wrap">
 		<div class="hy subcard half">
 			<h2 class="hy" style="font-size: larger;">Multi-Paradigm</h2>
 			<p>
@@ -122,7 +122,7 @@ html `
 			<p>
 			</p>
 		</div>
-	<</card>>
+	</div>
 	<<title>>Need to go to a Lower Level? <<link to="{{@page:minima/v1/minima}}" text="Minima"/>> is There for You<</title>>
 	<<card>>
 		<<subcard>>
