@@ -33,7 +33,8 @@ html `
 	<<title>>A Fresh Way to Develop Your Programs<</title>>
 	<div>
 	    <<p>>Designed from the ground up with interoperability in mind, with an easy to use plug-and-play interface.<</p>>
-	    <<p>>Anima is to C++ what Lua is to C.<</p>>
+	    <<p>>Anima is to C++ what Lua is to C: A platform designed for embedding in other applications.<</p>>
+	    <<p>>Don't have that stop you from using it by itself, though. It is just as remarkable as a standalone one.<</p>>
 	</div>
 	<<title>>But Why Anima?<</title>>
 	<<p>>Anima is designed to...<</p>>
@@ -105,21 +106,37 @@ html `
 		<div class="hy subcard half">
 			<h2 class="hy" style="font-size: larger;">Multi-Paradigm</h2>
 			<p>
-				From classic imperative programming,
-				to Object-Oriented Design,
-				to Trait-Oriented Programming,
-				and even Functional.
+				These are just some of the programming styles
+				supported in breve:
 			</p>
-			<p>Your style, your way.</p>
-			<p>No need for pesky metatables.</p>
+			<ul>
+				<li>Imperative Programming</li>
+				<li>Object-Oriented Programming</li>
+				<li>Trait-Oriented Programming</li>
+				<li>Functional Programming</li>
+			</ul>
+			<p>
+				Your style and your ways,
+				without the need for pesky metatables
+				or wacky globals.
+			</p>
 		</div>
 		<div class="hy subcard half">
 			<h2 class="hy" style="font-size: larger;">Clean and Concise</h2>
 			<p>
-				Statically-typed by design,
-				ensuring your code will run (and be ran) as intended.
+				<<b>>Statically-typed by design,
+				ensuring your code will run
+				(and be ran) as intended.<</b>><br>
+				Only check types because you
+				actually <<i>>need<</i>> to,
+				not because you <<i>>have<</i>> to.
 			</p>
 			<p>
+				<<b>>Designed to be fast to write,
+				with the least amount of friction in the way
+				of you and your development.<</b>><br>
+				Write less boilerplate,
+				and skip to the good parts.
 			</p>
 		</div>
 	</div>
