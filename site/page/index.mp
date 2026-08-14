@@ -74,14 +74,6 @@ html `
 			<p>Values are handled via <<i>>Reference Counting<</i>>, removing the need for background garbage collection.</p>
 			<p>Write more deterministic code with ease.</p>
 		</div>
-		<div class="hy subcard half">
-			<h2 class="hy" style="font-size: larger;"></h2>
-			<p>More information coming soon!</p>
-		</div>
-		<div class="hy subcard half">
-			<h2 class="hy" style="font-size: larger;"></h2>
-			<p>More information coming soon!</p>
-		</div>
 	</div>
 	<<title>>Meet <<link to="{{@page:breve/v1/breve}}" text="Breve"/>>: the Flagship Language of Anima<</title>>
 	<<card>>
@@ -101,10 +93,34 @@ html `
 					Simplicity meets modernity.
 				</p>
 				<p class="hy center-text">
-					Write less, and make more.
+					Write <<i>>less<</i>> and make <<i>>more<</i>>.
 				</p>
 			<</one-third>>
 		<</subcard>>
+	<</card>>
+	<<title>>But Why Breve?<</title>>
+	<<p>>Breve is...<</p>>
+	<<card>>
+		<div class="hy subcard half">
+			<h2 class="hy" style="font-size: larger;">Multi-Paradigm</h2>
+			<p>
+				From classic imperative programming,
+				to Object-Oriented Design,
+				to Trait-Oriented Programming,
+				and even Functional.
+			</p>
+			<p>Your style, your way.</p>
+			<p>No need for pesky metatables.</p>
+		</div>
+		<div class="hy subcard half">
+			<h2 class="hy" style="font-size: larger;">Clean and Concise</h2>
+			<p>
+				Statically-typed by design,
+				ensuring your code will run (and be ran) as intended.
+			</p>
+			<p>
+			</p>
+		</div>
 	<</card>>
 	<<title>>Need to go to a Lower Level? <<link to="{{@page:minima/v1/minima}}" text="Minima"/>> is There for You<</title>>
 	<<card>>
@@ -123,6 +139,12 @@ html `
 				</p>
 				<p class="hy center-text">
 					Made with clarity and ease-of-use in mind.
+				</p>
+				<p class="hy center-text">
+					Want to create your own language for the ART?
+					Just make it output Minima code, and use the
+					standard assembler <<inline-code>>minimac<</inline-code>>
+					as the final step!
 				</p>
 			<</one-third>>
 		<</subcard>>
