@@ -4,6 +4,7 @@ import [
 	"bits/banner"
 	"bits/title"
 	"bits/code"
+	"bits/code/inline"
 	"bits/spacer"
 	"bits/card"
 	"bits/subcard"
@@ -143,7 +144,7 @@ html `
 				<p class="hy center-text">
 					Want to create your own language for the ART?
 					Just make it output Minima code, and use the
-					standard assembler <<inline-code>>minimac<</inline-code>>
+					standard assembler <<code-inline>>minimac<</code-inline>>
 					as the final step!
 				</p>
 			<</one-third>>
