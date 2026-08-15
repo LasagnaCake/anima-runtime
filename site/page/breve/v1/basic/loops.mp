@@ -64,7 +64,7 @@ html `
                 when an iterator variable is not needed. <<b>>Count must be an integer.<</b>>
             </li>
             <li>
-                <<code-inline>><<kw text="repeat"/>> <<expr text="var-decl"/>> <<op text="->"/>> <<expr text="count"/>> <<expr text="expr"/>><</code-inline>>,
+                <<code-inline>><<kw text="repeat"/>> <<expr text="var-decl"/>> <<op text="=&gt;"/>> <<expr text="count"/>> <<expr text="expr"/>><</code-inline>>,
                 when an iterator variable is required. <<b>>Count must be an integer.<</b>>
             </li>
         </ul>
