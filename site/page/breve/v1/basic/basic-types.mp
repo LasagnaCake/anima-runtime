@@ -250,10 +250,10 @@ html `
 				codepoint.
 			<</type-info>>
 			<<type-default>>
-				Same as a 32-bit signed integer.
+				Same as a 32-bit unsigned integer.
 			<</type-default>>
 			<<type-range>>
-				Same as a 32-bit signed integer.
+				Same as a 32-bit unsigned integer.
 			<</type-range>>
 		<</type>>
 		<<type name="string">>
