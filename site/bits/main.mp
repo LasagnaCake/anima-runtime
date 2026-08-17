@@ -8,7 +8,7 @@ import [
 html_begin `
 <!DOCTYPE html>
 <<header/>>
-<body class="hy" style="background-color: white">
+<body class="hy" style="background-color: var(--theme)">
     <<navbar/>>
     <div class="hy app wide flex vertical center center-text">
 `
