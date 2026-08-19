@@ -1,7 +1,7 @@
 name "type-table"
 
 html_begin `
-<div class="hy card flex horizontal">
+<div class="hy card flex horizontal scroll-x">
 	<table class="hy alternate">
 	    <tr class="hy">
 	        <th class="hy">Type</th>
