@@ -229,14 +229,16 @@ header.hy {
 	</p>
 	<p class="hy">
 		Declared via the
-		<code class="hy inline">
-			<span class="macro">@Native</span><span class="op">(</span>
-			name <span class="op">=</span>
-			<span class="str">"&lt;native-name&gt;"</span>
-			<span class="op">)</span>
-		</code> attribute, followed by how
-		one would forward declare a function.
+		<code class="hy inline"><span class="macro">@Native</span></code-inline>>
+		attribute,
+		followed by how one would forward declare a function.
 	</p>
+	<code class="hy block">
+		<span class="macro">@Native</span><span class="op">(</span>
+		name <span class="op">=</span>
+		<span class="str">"&lt;native-name&gt;"</span>
+		<span class="op">)</span>
+	</code>
 	<p class="hy">
 		<strong>Shared Functions</strong>, much like native functions, are
 		also for calling cross-language code. Unlike their siblings,
@@ -245,16 +247,19 @@ header.hy {
 	</p>
 	<p class="hy">
 		Declared via the
-		<code class="hy inline">
-			<span class="macro">@Shared</span><span class="op">(</span>
-			lib <span class="op">=</span>
-			&lt;dynlib-path&gt;<span class="op">,</span>
-			name <span class="op">=</span>
-			<span class="str">"&lt;fn-name&gt;"</span>
-			<span class="op">)</span>
-		</code> attribute, followed by how
-		one would forward declare a function.
+		<code class="hy inline"><span class="macro">@Shared</span></code>
+		attribute,
+		followed by how one would forward declare a function.
 	</p>
+
+	<code class="hy block">
+		<span class="macro">@Shared</span><span class="op">(</span>
+		lib <span class="op">=</span>
+		&lt;dynlib-path&gt;<span class="op">,</span>
+		name <span class="op">=</span>
+		<span class="str">"&lt;fn-name&gt;"</span>
+		<span class="op">)</span>
+	</code>
 <hr class="hy" />
 
 	

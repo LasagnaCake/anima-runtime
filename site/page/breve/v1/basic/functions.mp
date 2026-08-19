@@ -123,14 +123,16 @@ html `
 	<</p>>
 	<<p>>
 		Declared via the
-		<<code-inline>>
-			<<attr>>Native<</attr>><<op text="("/>>
-			name <<op text="="/>>
-			<<dqstr>><<expr text="native-name"/>><</dqstr>>
-			<<op text=")"/>>
-		<</code-inline>> attribute, followed by how
-		one would forward declare a function.
+		<<code-inline>><<attr>>Native<</attr>></code-inline>>
+		attribute,
+		followed by how one would forward declare a function.
 	<</p>>
+	<<code-block>>
+		<<attr>>Native<</attr>><<op text="("/>>
+		name <<op text="="/>>
+		<<dqstr>><<expr text="native-name"/>><</dqstr>>
+		<<op text=")"/>>
+	<</code-block>>
 	<<p>>
 		<<b>>Shared Functions<</b>>, much like native functions, are
 		also for calling cross-language code. Unlike their siblings,
@@ -139,16 +141,19 @@ html `
 	<</p>>
 	<<p>>
 		Declared via the
-		<<code-inline>>
-			<<attr>>Shared<</attr>><<op text="("/>>
-			lib <<op text="="/>>
-			<<expr text="dynlib-path"/>><<op text=","/>>
-			name <<op text="="/>>
-			<<dqstr>><<expr text="fn-name"/>><</dqstr>>
-			<<op text=")"/>>
-		<</code-inline>> attribute, followed by how
-		one would forward declare a function.
+		<<code-inline>><<attr>>Shared<</attr>><</code-inline>>
+		attribute,
+		followed by how one would forward declare a function.
 	<</p>>
+
+	<<code-block>>
+		<<attr>>Shared<</attr>><<op text="("/>>
+		lib <<op text="="/>>
+		<<expr text="dynlib-path"/>><<op text=","/>>
+		name <<op text="="/>>
+		<<dqstr>><<expr text="fn-name"/>><</dqstr>>
+		<<op text=")"/>>
+	<</code-block>>
 <</section>>
 <</main>>
 `
