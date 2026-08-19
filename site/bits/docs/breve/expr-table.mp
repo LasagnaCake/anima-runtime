@@ -1,6 +1,7 @@
 name "expr-table"
 
 html_begin `
+<div class="hy overflow-x">
 <table class="hy alternate">
 <tr class="hy">
 	<th class="hy">Name</th>
@@ -11,4 +12,5 @@ html_begin `
 
 html_end `
 </table>
+</div>
 `
