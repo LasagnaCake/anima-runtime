@@ -123,7 +123,7 @@ html `
 	<</p>>
 	<<p>>
 		Declared via the
-		<<code-inline>><<attr>>Native<</attr>></code-inline>>
+		<<code-inline>><<attr>>Native<</attr>><</code-inline>>
 		attribute,
 		followed by how one would forward declare a function.
 	<</p>>
@@ -145,7 +145,6 @@ html `
 		attribute,
 		followed by how one would forward declare a function.
 	<</p>>
-
 	<<code-block>>
 		<<attr>>Shared<</attr>><<op text="("/>>
 		lib <<op text="="/>>
