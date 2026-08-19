@@ -42,7 +42,7 @@ html `
 	<</p>>
 	<<p>>
 		In Breve, how a value gets passed around is defined at
-		<<i>>assignment<</i>>, not declaration. Thera are three ways to
+		<<i>>assignment<</i>>, not declaration. There are three ways to
 		pass values around:
 	<</p>>
 	<<p>>
