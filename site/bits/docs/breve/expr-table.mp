@@ -1,7 +1,7 @@
 name "expr-table"
 
 html_begin `
-<div class="hy overflow-x">
+<div class="hy scroll-x">
 <table class="hy alternate">
 <tr class="hy">
 	<th class="hy">Name</th>
