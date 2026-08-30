@@ -5,7 +5,7 @@ default {
 }
 
 html_begin `
-<div class="hy app wide flex vertical center left-text">
+<div class="hy app wide flex vertical center left-text has-sidebar">
 `
 
 html_end `
