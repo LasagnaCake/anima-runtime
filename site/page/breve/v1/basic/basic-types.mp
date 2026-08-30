@@ -62,7 +62,7 @@ html `
 		<<type name="null">>
 			<<type-info>>
 				Null value. Indicates that the
-				<<b>>value does not exist<</b>>
+				<<b>>value does not exist<</b>>.
 				All nullable types (
 				those prefixed with
 				<<code-inline>><<op text="?"/>><</code-inline>>
