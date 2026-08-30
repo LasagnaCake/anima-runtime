@@ -38,9 +38,9 @@ html_begin `
                 <li class="hy">Anonymous Blocks</li>
                 <li class="hy">Attributes</li>
                 <li class="hy">Inline Assembly (Minima)</li>
-                <li class="hy">Events</li>
+                <li class="hy">Exposed Calls</li>
                 <li class="hy">Shared Libraries</li>
-                <li class="hy">Internal Calls</li>
+                <li class="hy">Native Calls</li>
                 <li class="hy">Tricks, Tips and Techniques</li>
             </ol>
 		<</nav-section>>
