@@ -55,6 +55,11 @@ html `
         <<code-inline>><<kw text="while"/>> <<expr text="cond"/>> <<expr text="expr"/>><</code-inline>>.
 	<</p>>
 	<<p>>
+        <<b>><<code-inline>><<kw text="for"/>><</code-inline>> loops<</b>>:
+        Used to iterate through iteratable objects (currently only arrays). Written in the form of
+        <<code-inline>><<kw text="for"/>> <<expr text="elem"/>> <<op text="=>"/>> <<expr text="array"/>> <<expr text="expr"/>><</code-inline>>.
+	<</p>>
+	<<p>>
         <<b>><<code-inline>><<kw text="repeat"/>><</code-inline>> loops<</b>>:
         Executes the expression repeatedly while the given condition is true.
         Can be written as:

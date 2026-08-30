@@ -154,5 +154,23 @@ html `
 		<<op text=")"/>>
 	<</code-block>>
 <</section>>
+<<section>>
+	<<title>>Variadic functions<</title>>
+	<<p>>
+		Variadic functions are functions
+		that can take a variable number of arguments.
+		These types of functions, however,
+		<<b>>cannot have any optional argument<</b>>.
+	<</p>>
+	<<p>>
+		Declared via the
+		<<code-inline>><<attr>>Variadic<</attr>><</code-inline>>
+		attribute. <<b>>The last argument in the function must be an array.<</b>>
+	<</p>>
+	<<p>>
+		All the subsequent values passed to the function (past the previous ones)
+		will be stored in this array.
+	<</p>>
+<</section>>
 <</main>>
 `

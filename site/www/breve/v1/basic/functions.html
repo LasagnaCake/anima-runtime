@@ -85,6 +85,7 @@ header.hy {
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/transfer-semantics.html" class="hy link" style="font-size: inherit;">Transfer Semantics</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/variables.html" class="hy link" style="font-size: inherit;">Variables</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/basic-types.html" class="hy link" style="font-size: inherit;">Basic Types</a></li>
+                <li class="hy"><a href="https://animart.dev//breve/v1/basic/special-types.html" class="hy link" style="font-size: inherit;">Special Types</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/functions.html" class="hy link" style="font-size: inherit;">Functions</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/branches.html" class="hy link" style="font-size: inherit;">Branches</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/loops.html" class="hy link" style="font-size: inherit;">Loops</a></li>
@@ -104,26 +105,10 @@ header.hy {
                 <li class="hy">Anonymous Blocks</li>
                 <li class="hy">Attributes</li>
                 <li class="hy">Inline Assembly (Minima)</li>
-                <li class="hy">Events</li>
+                <li class="hy">Eventsai</li>
                 <li class="hy">Shared Libraries</li>
                 <li class="hy">Internal Calls</li>
                 <li class="hy">Tricks, Tips and Techniques</li>
-            </ol>
-		
-</div>
-
-		
-</div>
-
-		
-<div class="hy">
-<strong>Conventions</strong>
-
-            <ol class="hy">
-                <li class="hy">Names</li>
-                <li class="hy">Styling</li>
-                <li class="hy">Declarations</li>
-                <li class="hy">Expressions</li>
             </ol>
 		
 </div>
@@ -259,6 +244,24 @@ header.hy {
 		<span class="str">"&lt;fn-name&gt;"</span>
 		<span class="op">)</span>
 	</code>
+<hr class="hy" />
+
+	<h2 class="hy">Variadic functions</h2>
+	<p class="hy">
+		Variadic functions are functions
+		that can take a variable number of arguments.
+		These types of functions, however,
+		<strong>cannot have any optional argument</strong>.
+	</p>
+	<p class="hy">
+		Declared via the
+		<code class="hy inline"><span class="macro">@Variadic</span></code>
+		attribute. <strong>The last argument in the function must be an array.</strong>
+	</p>
+	<p class="hy">
+		All the subsequent values passed to the function (past the previous ones)
+		will be stored in this array.
+	</p>
 <hr class="hy" />
 
 	
