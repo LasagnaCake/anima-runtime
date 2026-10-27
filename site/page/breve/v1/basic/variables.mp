@@ -52,7 +52,7 @@ html `
 		<<b>>address name<</b>>.<br>
 		Declared with the
 		<<code-inline>>
-			<<attr text="Global"/>><<op text="("/>><<dqstr>><<expr text="addr-name"/>><</dqstr>><<op text=")"/>>
+			<<attr text="Global"/>><<op text="("/>>name<<op text="="/>><<dqstr>><<expr text="addr-name"/>><</dqstr>><<op text=")"/>>
 		<</code-inline>>
 		attribute.
 	<</p>>
@@ -73,7 +73,7 @@ html `
 		<<b>>This variable location can only be read from.<</b>>
 		Declared with the
 		<<code-inline>>
-			<<attr text="Out"/>><<op text="("/>><<dqstr>><<expr text="addr-name"/>><</dqstr>><<op text=")"/>>
+			<<attr text="Out"/>><<op text="("/>>name<<op text="="/>><<dqstr>><<expr text="addr-name"/>><</dqstr>><<op text=")"/>>
 		<</code-inline>>
 		attribute.
 	<</p>>
