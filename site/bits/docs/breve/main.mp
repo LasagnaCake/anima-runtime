@@ -6,6 +6,8 @@ import [
 	"bits/docs/content"
 	"bits/docs/page"
 	"bits/link"
+	"bits/code/inline"
+	"bits/code/kw"
 ]
 
 default {
@@ -24,6 +26,7 @@ html_begin `
                 <li class="hy"><<link to="{{@page:breve/v1/basic/variables}}">>Variables<</link>></li>
                 <li class="hy"><<link to="{{@page:breve/v1/basic/basic-types}}">>Basic Types<</link>></li>
                 <li class="hy"><<link to="{{@page:breve/v1/basic/special-types}}">>Special Types<</link>></li>
+                <li class="hy"><<link to="{{@page:breve/v1/basic/with-expression}}">><<code-inline>><<kw text="with"/>><</code-inline>> expression<</link>></li>
                 <li class="hy"><<link to="{{@page:breve/v1/basic/functions}}">>Functions<</link>></li>
                 <li class="hy"><<link to="{{@page:breve/v1/basic/branches}}">>Branches<</link>></li>
                 <li class="hy"><<link to="{{@page:breve/v1/basic/loops}}">>Loops<</link>></li>

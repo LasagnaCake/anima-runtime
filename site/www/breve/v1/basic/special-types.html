@@ -86,6 +86,7 @@ header.hy {
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/variables.html" class="hy link" style="font-size: inherit;">Variables</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/basic-types.html" class="hy link" style="font-size: inherit;">Basic Types</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/special-types.html" class="hy link" style="font-size: inherit;">Special Types</a></li>
+                <li class="hy"><a href="https://animart.dev//breve/v1/basic/with-expression.html" class="hy link" style="font-size: inherit;"><code class="hy inline"><span class="kw">with</span></code> expression</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/functions.html" class="hy link" style="font-size: inherit;">Functions</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/branches.html" class="hy link" style="font-size: inherit;">Branches</a></li>
                 <li class="hy"><a href="https://animart.dev//breve/v1/basic/loops.html" class="hy link" style="font-size: inherit;">Loops</a></li>
@@ -129,6 +130,8 @@ header.hy {
         <ul>
             <li><strong>Arrays</strong></li>
             <li><strong>Nullable (option) types</strong></li>
+            <li><strong>Tuples</strong></li>
+            <li><strong>Unions</strong></li>
         </ul>
 	</p>
 <hr class="hy" />
@@ -185,6 +188,48 @@ header.hy {
         <code class="hy inline"><span class="op">?</span>&lt;type&gt;</code>
         or <code class="hy inline"><span class="kw">maybe</span> &lt;type&gt;</code>.
 	</p>
+<hr class="hy" />
+
+	<h2 class="hy">Tuples</h2>
+	<p class="hy">
+        Tuples, like <code class="hy inline"><span class="kw">struct</span></code>s, are collections of values.
+	</p>
+	<p class="hy">
+        To declare a tuple type, use
+        <code class="hy inline">
+        <span class="op">(</span>&lt;type&gt;<span class="memo">[</span><span class="op">,</span> <span class="memo">...]</span><span class="op">)</span>
+        </code>.
+        To access a value in the tuple, use the
+        <code class="hy inline">
+        <span class="op">.</span>_&lt;index&gt;
+        </code> syntax.
+	</p>
+<hr class="hy" />
+
+	<h2 class="hy">Unions</h2>
+	<p class="hy">
+        Unions offer a way to safely store a single value, of which can be various different types.
+	</p>
+	<p class="hy">
+        To declare an union type, use
+        <code class="hy inline">
+        <span class="kw">join</span> <span class="op">(</span>&lt;type&gt;<span class="memo">[</span><span class="op">,</span> <span class="memo">...]</span><span class="op">)</span>
+        </code>.
+        To access the value as a specific type, use the
+        <code class="hy inline">
+        <span class="op">.</span>_&lt;index&gt;
+        </code> syntax.
+	</p>
+	
+	<div class="hy alert info soft subcard">
+	<h3 class="hy alert info loud">Note</h3>
+
+		<p class="hy">
+			Any single-element tuple/union automatically decays to its respective type.
+		</p>
+	
+    </div>
+
 <hr class="hy" />
 
 	

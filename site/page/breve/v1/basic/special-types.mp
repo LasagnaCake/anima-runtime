@@ -38,6 +38,8 @@ html `
         <ul>
             <li><<b>>Arrays<</b>></li>
             <li><<b>>Nullable (option) types<</b>></li>
+            <li><<b>>Tuples<</b>></li>
+            <li><<b>>Unions<</b>></li>
         </ul>
 	<</p>>
 <</section>>
@@ -94,6 +96,43 @@ html `
         <<code-inline>><<op text="?"/>><<expr text="type"/>><</code-inline>>
         or <<code-inline>><<kw text="maybe"/>> <<expr text="type"/>><</code-inline>>.
 	<</p>>
+<</section>>
+<<section>>
+	<<title>>Tuples<</title>>
+	<<p>>
+        Tuples, like <<code-inline>><<kw text="struct"/>><</code-inline>>s, are collections of values.
+	<</p>>
+	<<p>>
+        To declare a tuple type, use
+        <<code-inline>>
+        <<op text="("/>><<expr text="type"/>><<memo>>[<</memo>><<op text=","/>> <<memo>>...]<</memo>><<op text=")"/>>
+        <</code-inline>>.
+        To access a value in the tuple, use the
+        <<code-inline>>
+        <<op text="."/>>_<<expr text="index"/>>
+        <</code-inline>> syntax.
+	<</p>>
+<</section>>
+<<section>>
+	<<title>>Unions<</title>>
+	<<p>>
+        Unions offer a way to safely store a single value, of which can be various different types.
+	<</p>>
+	<<p>>
+        To declare an union type, use
+        <<code-inline>>
+        <<kw text="join"/>> <<op text="("/>><<expr text="type"/>><<memo>>[<</memo>><<op text=","/>> <<memo>>...]<</memo>><<op text=")"/>>
+        <</code-inline>>.
+        To access the value as a specific type, use the
+        <<code-inline>>
+        <<op text="."/>>_<<expr text="index"/>>
+        <</code-inline>> syntax.
+	<</p>>
+	<<note>>
+		<<p>>
+			Any single-element tuple/union automatically decays to its respective type.
+		<</p>>
+	<</note>>
 <</section>>
 <</main>>
 `
