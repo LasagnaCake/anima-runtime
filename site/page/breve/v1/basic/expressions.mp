@@ -374,7 +374,7 @@ html `
 			<<code-inline>>
 				<<kw text="repeat"/>>
 				<<expr text="var-decl"/>>
-				<<op text="-&gt;"/>>
+				<<op text="=&gt;"/>>
 				<<expr text="count"/>>
 				<<expr text="expr"/>>
 			<</code-inline>>
