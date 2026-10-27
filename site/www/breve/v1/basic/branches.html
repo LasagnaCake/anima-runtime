@@ -245,6 +245,36 @@ header.hy {
 	</p>
 <hr class="hy" />
 
+	<h2 class="hy">
+	<code class="hy inline"><span class="kw">try</span></code>
+	blocks
+	</h2>
+	<p class="hy">
+        An advancing branch structure for handling exceptional conditions.
+        <strong>May only be used with nullable variables.</strong>
+	</p>
+	<p class="hy">
+        It may be declared as such:
+	</p>
+    <code class="hy block">
+		<span class="kw">try</span>
+		&lt;var-name&gt;
+		<span class="op">:=</span>
+		&lt;possibly-null-expr&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;do-if-exists&gt;<br>
+		<span class="kw">else</span><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;do-if-does-not-exist&gt;
+	</code>
+	<p class="hy">
+        The block is only executed when the variable <code class="hy inline">&lt;var-name&gt;</code>
+        has a value different from <code class="hy inline"><span class="num">null</span></code>.
+        Otherwise, the code in the <code class="hy inline"><span class="kw">else</span></code> clause is executed.
+	</p>
+	<p class="hy">
+        The <code class="hy inline"><span class="kw">else</span></code> clause is optional.
+	</p>
+<hr class="hy" />
+
 	
 </div>
 

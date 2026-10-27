@@ -142,5 +142,35 @@ html `
 		appropriate course of action to take for the given branch.
 	<</p>>
 <</section>>
+<<section>>
+	<<title>>
+	<<code-inline>><<kw text="try"/>><</code-inline>>
+	blocks
+	<</title>>
+	<<p>>
+        An advancing branch structure for handling exceptional conditions.
+        <<b>>May only be used with nullable variables.<</b>>
+	<</p>>
+	<<p>>
+        It may be declared as such:
+	<</p>>
+    <<code-block>>
+		<<kw text="try"/>>
+		<<expr text="var-name"/>>
+		<<op text=":="/>>
+		<<expr text="possibly-null-expr"/>><br>
+		<<tab/>><<expr text="do-if-exists"/>><br>
+		<<kw text="else"/>><br>
+		<<tab/>><<expr text="do-if-does-not-exist"/>>
+	<</code-block>>
+	<<p>>
+        The block is only executed when the variable <<code-inline>><<expr text="var-name"/>><</code-inline>>
+        has a value different from <<code-inline>><<num text="null"/>><</code-inline>>.
+        Otherwise, the code in the <<code-inline>><<kw text="else"/>><</code-inline>> clause is executed.
+	<</p>>
+	<<p>>
+        The <<code-inline>><<kw text="else"/>><</code-inline>> clause is optional.
+	<</p>>
+<</section>>
 <</main>>
 `
